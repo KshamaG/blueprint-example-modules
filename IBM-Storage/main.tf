@@ -35,7 +35,7 @@ variable "cos_bucket_name" {
 }
 
 resource "random_id" "name" {
-  byte_length = 5
+  byte_length = 8
 }
 
 
@@ -56,7 +56,7 @@ resource "ibm_resource_instance" "cos_instance" {
   plan              = var.cos_storage_plan
   location          = "global"
   resource_group_id = var.resource_group_id
-  tags              = ["t1", "t2"]
+  tags              = ["t1", "t2", "t3"]
 
 }
 

@@ -4,7 +4,7 @@ output "resource_group_id" {
 }
 output "resource_group_name" {
   description = "The Name of the resource group"
-  value       = var.name
+  value       = "${var.name}-${var.suffix}"
 }
 
 output "provision" {
