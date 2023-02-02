@@ -10,7 +10,7 @@ variable "provision" {
 }
 
 variable "suffix" {
-  type = "string"
+  type = string
   description = "suffix for the resource group name"
   default = "bp"
 }
